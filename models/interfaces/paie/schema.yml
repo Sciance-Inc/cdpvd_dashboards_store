@@ -6,12 +6,6 @@ models:
     description: >
       Table d'interface. Utilisée uniquement pour pallier à une enventuelle absence (complète ou partielle) de la table 'pai_hchq_pmnt_dist_cmpt' de la base de données source.
       
-  - name: i_pai_hchq_pmnt
-    tags: ["interface"]
-    description: >
-      Table d'interface. Utilisée uniquement pour pallier à une enventuelle absence (complète ou partielle) de la table 'pai_hchq_pmnt' de la base de données source.
-       Historique de paiement pour chaque matricule.
-       
   - name: i_pai_hchq
     tags: ["interface"]
     description: >
