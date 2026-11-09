@@ -15,6 +15,19 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #}
+{{
+    config(
+        post_hook=[
+            core_dashboards_store.create_clustered_index(
+                "{{ this }}", ["id_eco", "fiche", "annee"]
+            ),
+            core_dashboards_store.create_nonclustered_index(
+                "{{ this }}", ["code_perm"]
+            ),
+        ]
+    )
+}}
+
 {% if "years_of_data_student" in var("marts")["educ_serv"]["recency"] %}
     {% set years_of_data_student = var("marts")["educ_serv"]["recency"][
         "years_of_data_student"

@@ -52,6 +52,8 @@ models:
 
             educ_serv:
                 features:
+                    fact_yearly_student:
+                        +enabled: false
                 staging:
         dashboards:
             educ_serv:
