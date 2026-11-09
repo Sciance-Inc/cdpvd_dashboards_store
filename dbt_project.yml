@@ -64,11 +64,15 @@ models:
                 i_gpm_e_abs:
                     +enabled: false
             jade:
+                i_e_ele:
+                    +enabled: false
                 i_e_ri_mentions:
                     +enabled: false
                 i_t_prog:
                     +enabled: false
             paie:
+                i_pai_hchq:
+                    +enabled: false
                 i_pai_tab_corp_empl:
                     +enabled: false
                 i_pai_hemp:
